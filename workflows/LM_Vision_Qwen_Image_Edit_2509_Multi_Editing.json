@@ -116,7 +116,7 @@
   },
   "78": {
     "inputs": {
-      "image": "IMG_3067_w_dog_closeup.jpg"
+      "image": "IMAGE1"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -169,7 +169,7 @@
   },
   "106": {
     "inputs": {
-      "image": "Jack_Russell_Terrier_1.jpg"
+      "image": "IMAGE2"
     },
     "class_type": "LoadImage",
     "_meta": {
@@ -245,7 +245,7 @@
   },
   "116": {
     "inputs": {
-      "value": "The dog is smelling the sofa, only part of the dog is visible.\nUpdate the lighting to match the scenery.\nPreserve sofa textures.\nStudio lighting, white background, soft shadows.\nStudio portrait"
+      "value": "REPLACE_ME_WITH_YOUR_PROMPT_HERE"
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
@@ -254,7 +254,7 @@
   },
   "117": {
     "inputs": {
-      "value": "vacuum robot, vacuum cleaner, roomba"
+      "value": "REPLACE_ME_WITH_YOUR_NEGATIVE_PROMPT_HERE"
     },
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
