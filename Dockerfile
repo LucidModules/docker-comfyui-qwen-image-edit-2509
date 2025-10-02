@@ -3,8 +3,9 @@ FROM runpod/worker-comfyui:5.1.0-base
 # FIXME: when runpod releases the new version with ComfyUI 0.5.9, use it instead of manually installing it here
 # Remove any pre-bundled ComfyUI and install the exact ComfyUI version you need
 # Replace v0.5.9 with the tag/commit you want to pin.
-RUN pip uninstall -y ComfyUI || true \
- && pip install --no-cache-dir -e "git+https://github.com/comfyanonymous/ComfyUI.git@v0.3.59#egg=ComfyUI" \
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/* \
+ && git clone --depth=1 --branch v0.3.59 https://github.com/comfyanonymous/ComfyUI.git /opt/ComfyUI \
+ && pip install --no-cache-dir -r /opt/ComfyUI/requirements.txt \
  && pip install --no-cache-dir --upgrade pip setuptools wheel
 
 # Ensure comfy CLI tools are available (reinstall/upgrade if the base image ships an older one)
