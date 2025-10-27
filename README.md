@@ -11,3 +11,9 @@ Required Models:
 
 Original Repos:
 https://github.com/ModelTC/Qwen-Image-Lightning
+
+## Manual build
+```shell
+docker build -t "lucidmodules/docker-comfyui-qwen-edit:1.1.0" .
+docker push lucidmodules/docker-comfyui-qwen-edit:1.1.0
+```
